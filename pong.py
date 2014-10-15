@@ -55,6 +55,8 @@ def draw(canvas):
     if ball_pos[1] - BALL_RADIUS <= 0 or ball_pos[1] + BALL_RADIUS +1 >= HEIGHT:
         ball_vel[1] = -ball_vel[1]
         
+        
+	# TODO check if conditions     
     if ball_pos[0] - BALL_RADIUS <= PAD_WIDTH:
         if ball_pos[1] + BALL_RADIUS in range(paddle1_pos[0][1], paddle1_pos[3][1] +1) or ball_pos[1] - BALL_RADIUS in range(paddle1_pos[0][1], paddle1_pos[3][1] +1):
             ball_vel[0] = -1.1*ball_vel[0]
